@@ -1,0 +1,81 @@
+
+@import url('https://googleapis.com');
+
+* {
+    border: 2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+background-color: #fcfcfc; 
+color: #000000; 
+ 
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fa8e8e;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.carrinho{
+font-weight: bold;
+}
+.contador{
+    background: #ff5c81;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+   
+}
+main{
+    padding: 40px 5%;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+
+}
+.produto-card {
+    background-color: #7dcff498;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+.produto-card:hover {
+     transform: translateY(-5px);
+}
+button {
+    background-color: #fa8e8e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fa8e8e;
+    color: white;
+    margin-top: 40px;
+}
+/* Container para separar o botão da grade de produtos */
+
+.area-finalizar {
+    margin-top: 50px; /* Empurra o botão para baixo da vitrine */
+    display: flex;
+    justify-content: center; /* Centraliza o botão na página */
+    padding: 210px;
+    border-top: 1px solid #ddd; /* Linha sutil para separar as seções */
+}
+
